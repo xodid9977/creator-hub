@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /_template/
+
+Sitemap: https://xodid9977.github.io/creator-hub/sitemap.xml

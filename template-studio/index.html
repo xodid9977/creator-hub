@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>모션 템플릿 스튜디오 — 무료 모션그래픽 템플릿 편집기 | Creator Hub</title>
-<meta name="description" content="45개 모션그래픽 템플릿과 500여 개 에셋으로 장면·자막·전환·효과음·음악을 트랙별로 편집하고 WebM 영상으로 내보내는 무료 브라우저 도구. 설치·가입 없음.">
+<meta name="description" content="67개 모션그래픽 템플릿과 500여 개 에셋으로 장면·자막·전환·효과음·음악을 트랙별로 편집하고 WebM 영상으로 내보내는 무료 브라우저 도구. 설치·가입 없음.">
 <link rel="canonical" href="https://xodid9977.github.io/creator-hub/template-studio/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Creator Hub">
 <meta property="og:title" content="모션 템플릿 스튜디오">
-<meta property="og:description" content="45개 모션그래픽 템플릿과 500여 개 에셋으로 장면·자막·전환·효과음·음악을 트랙별로 편집하고 WebM 영상으로 내보내는 무료 브라우저 도구. 설치·가입 없음.">
+<meta property="og:description" content="67개 모션그래픽 템플릿과 500여 개 에셋으로 장면·자막·전환·효과음·음악을 트랙별로 편집하고 WebM 영상으로 내보내는 무료 브라우저 도구. 설치·가입 없음.">
 <meta property="og:url" content="https://xodid9977.github.io/creator-hub/template-studio/">
 <meta name="theme-color" content="#15141b">
 <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
@@ -17,7 +17,7 @@
 <!-- ADSENSE:END -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Black+Han+Sans&family=Do+Hyeon&family=Gaegu:wght@400;700&family=Press+Start+2P&family=Gowun+Batang:wght@400;700&family=IBM+Plex+Sans+KR:wght@400;500;700&family=JetBrains+Mono:wght@400;600&family=Jua&family=Nanum+Brush+Script&family=Nanum+Myeongjo:wght@400;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Black+Han+Sans&family=Do+Hyeon&family=Gaegu:wght@400;700&family=Press+Start+2P&family=Gowun+Batang:wght@400;700&family=IBM+Plex+Sans+KR:wght@400;500;700&family=JetBrains+Mono:wght@400;600&family=Jua&family=Nanum+Brush+Script&family=Nanum+Myeongjo:wght@400;800&family=Noto+Sans+KR:wght@900&family=Gothic+A1:wght@800&family=Montserrat:wght@800&family=Playfair+Display:wght@700&family=Bebas+Neue&display=swap">
 <style>
 /* Layout: editing-suite shell — preview + timeline on the left, a tabbed inspector on the right; stacks on phones. Single dark look, like an NLE. */
 :root{
@@ -288,7 +288,7 @@ html,body{height:auto}
     <div class="brand"><a class="hub-back" href="../">← 허브</a><b>모션 <i>템플릿</i> 스튜디오</b><span>템플릿 → 장면 · 자막 · 전환 · 효과음 · 음악을 골라 영상 만들기</span></div>
     <button class="btn" id="btn-import" type="button">프로젝트 불러오기</button>
     <button class="btn" id="btn-save" type="button">프로젝트 저장 (.json)</button>
-    <button class="btn primary" id="btn-export" type="button">영상 내보내기 (.webm)</button>
+    <button class="btn primary" id="btn-export" type="button">영상 내보내기</button>
     <input type="file" id="file-import" accept=".json,application/json" hidden>
   </header>
 
@@ -329,22 +329,25 @@ html,body{height:auto}
 </div>
 <section class="tool-about" id="how-to">
 <h2>모션 템플릿 스튜디오 사용법</h2>
-<p>모션 템플릿 스튜디오는 설치 없이 브라우저에서 바로 쓰는 무료 모션그래픽 편집기입니다. 드라마 타이틀, K-POP 가사 영상, 브랜드 광고, 뉴스 오프닝, 숏폼 훅 등 45가지 템플릿에서 시작해 장면·자막·전환·효과음·음악을 하나씩 바꾸고, 완성된 영상을 WebM 파일로 내보낼 수 있습니다. 모든 그림과 소리는 브라우저가 직접 그리고 합성하므로 별도의 소스 파일이 필요 없습니다.</p>
+<p>모션 템플릿 스튜디오는 설치 없이 브라우저에서 바로 쓰는 무료 모션그래픽 편집기입니다. 드라마 타이틀, K-POP 가사 영상, 브랜드 광고, 뉴스 오프닝, 숏폼 훅 등 67가지 템플릿에서 시작해 장면·자막·전환·효과음·음악을 하나씩 바꾸고, 완성된 영상을 WebM 파일로 내보낼 수 있습니다. 모든 그림과 소리는 브라우저가 직접 그리고 합성하므로 별도의 소스 파일이 필요 없습니다.</p>
 <ol>
 <li><b>템플릿 고르기</b> — 오른쪽 ‘템플릿’ 탭에서 카테고리를 누르거나 “네온”, “세로”, “피아노”처럼 검색합니다.</li>
 <li><b>트랙별로 고치기</b> — 타임라인의 화면·자막·전환·효과음·음악 트랙에서 항목을 누르면 그 부분만 편집 창이 열립니다.</li>
 <li><b>에셋 끌어다 놓기</b> — ‘에셋’ 탭의 장면·전환·효과음 카드를 타임라인으로 끌어다 놓으면 바로 들어갑니다. 카드에 마우스를 올리면 움직임을 미리 볼 수 있어요.</li>
 <li><b>색·서체·효과</b> — ‘효과·색’ 탭에서 팔레트, 서체, 화면 비율(16:9·9:16·1:1), 필름 그레인·레터박스 등을 조절합니다.</li>
+<li><b>화면에서 바로 편집</b> — 미리보기 화면의 글자나 사진을 클릭하면 그 항목의 편집 창이 열리고, 끌면 위치가, 모서리 점을 끌면 크기가 바뀝니다. ‘추가 요소’로 텍스트나 로고를 원하는 곳에 더 올릴 수 있습니다.</li>
+<li><b>사진·로고 넣기</b> — ‘사진 히어로’, ‘로고 리빌’, ‘스마트폰 목업’ 같은 장면은 ‘장면·기법’ 탭에서 내 이미지를 넣을 수 있습니다. 미리보기 화면에 파일을 끌어다 놓아도 됩니다.</li>
+<li><b>되돌리기·단축키</b> — Ctrl+Z / Ctrl+Shift+Z로 되돌리기·다시 실행, Ctrl+D 장면 복제, Del 삭제, PgUp·PgDn 장면 이동.</li>
 <li><b>내보내기</b> — ‘영상 내보내기’를 누르면 영상 길이만큼 실시간 녹화한 뒤 WebM 파일로 저장합니다.</li>
 </ol>
 <div class="ad-slot" data-slot="studio-about" hidden></div>
 <div class="cols">
-<div><b>45개 템플릿</b>플랫 일러스트 로맨스, 키네틱 타이포, 다크 스릴러, 동양 판타지, 뉴스, 게임, 요리, 시즌 이벤트 등 8개 카테고리.</div>
-<div><b>500여 개 에셋</b>장면 프리셋 200여 개, 일러스트 90종, 전환 17종, 텍스트 등장 12종, 효과음 30종, 음악 16종.</div>
+<div><b>67개 템플릿</b>플랫 일러스트 로맨스, 키네틱 타이포, 다크 스릴러, 동양 판타지, 뉴스, 게임, 요리, 시즌 이벤트, 회사 소개, 채용, 세일 광고, 사진 슬라이드, 카드뉴스 등 11개 카테고리.</div>
+<div><b>500여 개 에셋</b>장면 프리셋 200여 개, 일러스트 90종, 전환 24종, 텍스트 등장 22종, 효과음 30종, 음악 16종.</div>
 <div><b>내 데이터는 내 브라우저에</b>작업 내용은 서버로 보내지 않고 브라우저에만 자동 저장됩니다. ‘프로젝트 저장’으로 파일 백업도 가능해요.</div>
 </div>
 <h3>자주 묻는 질문</h3>
-<details><summary>MP4로 저장할 수 있나요?</summary><p>브라우저 녹화 기능은 WebM 형식으로 저장합니다. MP4가 필요하면 HandBrake, 캡컷, 프리미어 프로 같은 프로그램에서 WebM을 열어 변환하세요.</p></details>
+<details><summary>MP4로 저장할 수 있나요?</summary><p>네. 크롬·엣지 최신 버전에서는 내보내기 버튼 옆에서 MP4를 고르면 바로 MP4로 저장됩니다. MP4 녹화를 지원하지 않는 브라우저에서는 WebM으로 저장되며, HandBrake·캡컷·프리미어 프로에서 변환할 수 있습니다.</p></details>
 <details><summary>만든 영상을 상업적으로 써도 되나요?</summary><p>네. 스튜디오의 일러스트·음악·효과음은 모두 코드로 새로 만든 것이라 자유롭게 쓸 수 있습니다. 직접 올린 음악·효과음 파일의 권리는 올린 분이 확인해 주세요.</p></details>
 <details><summary>휴대폰에서도 되나요?</summary><p>편집과 미리보기는 됩니다. 다만 끌어다 놓기와 영상 내보내기는 데스크톱 크롬·엣지에서 가장 안정적입니다.</p></details>
 <details><summary>작업한 내용이 사라졌어요.</summary><p>작업 내용은 브라우저 저장소에 자동 저장되므로, 브라우저 기록·사이트 데이터를 지우거나 시크릿 창을 닫으면 사라집니다. 중요한 작업은 ‘프로젝트 저장(.json)’으로 파일을 보관하세요.</p></details>
@@ -1232,7 +1235,7 @@ const TEMPLATES=[
 ];
 const CAT_OF={romance:'드라마·예능 타이틀',kinetic:'뮤직·가사',journey:'브랜드·광고',noir:'드라마·예능 타이틀',fantasy:'드라마·예능 타이틀',grid:'타이포·실험',promo:'정보·홍보'};
 TEMPLATES.forEach(t=>{t.cat=CAT_OF[t.id];t.src='channel'});
-const FX0={grain:0,vignette:0,letterbox:0,halftone:0,scanlines:0,chroma:0,lightleak:0,glitch:0,flicker:0,shake:.5};
+const FX0={polish:.6,grain:0,vignette:0,letterbox:0,halftone:0,scanlines:0,chroma:0,lightleak:0,glitch:0,flicker:0,shake:.5};
 const X=(o)=>({src:'ext',...o,fx:{...FX0,...o.fx}});
 TEMPLATES.push(
  X({id:'synthwave',cat:'뮤직·가사',name:'레트로 신스웨이브',desc:'80년대 선셋과 네온 그리드, 크롬 타이포, 스캔라인. 시티팝·레트로 음원.',
@@ -1428,7 +1431,11 @@ TEMPLATES.push(
   fx:{grain:.2,vignette:.3},
   scenes:[S('liquid','ON AIR','EP.24',2.6,'blur','bold',['zoom',.45,'whoosh']),S('lowerThird','진행 · 박 소 리','매주 월요일 공개',3,'slideUp','minimal',['fade',.6]),S('quote','좋은 대화는\n좋은 질문에서 시작된다','— 이번 화의 한 줄',3.2,'blur','serif',['iris',.5,'pop']),S('endcard','구독하고 알림 받기','팟캐스트 앱 · 유튜브',3,'pop',null,['fade',.4])]}),
 );
-const CAT_ORDER=['드라마·예능 타이틀','뮤직·가사','브랜드·광고','정보·홍보','유튜브·숏폼','이벤트·시즌','어린이·동화','타이포·실험'];
+</script>
+<script src="pro-pack.js"></script>
+<script src="pro-templates.js"></script>
+<script>
+const CAT_ORDER=['유튜브·숏폼','브랜드·광고','비즈니스·기업','사진·슬라이드','SNS·카드뉴스','정보·홍보','이벤트·시즌','드라마·예능 타이틀','뮤직·가사','어린이·동화','타이포·실험'];
 const CATS=['전체',...CAT_ORDER.filter(c=>TEMPLATES.some(t=>t.cat===c))];
 
 /* ============================================================
@@ -1461,12 +1468,12 @@ const REF=[
 /* ============================================================
    10. state
 ============================================================ */
-const FX_DEF={grain:{label:'필름 그레인'},vignette:{label:'비네팅'},letterbox:{label:'시네마 레터박스'},halftone:{label:'하프톤 도트'},scanlines:{label:'스캔라인'},chroma:{label:'RGB 분리 (색수차)'},lightleak:{label:'라이트 릭'},glitch:{label:'랜덤 글리치'},flicker:{label:'조명 깜빡임'},shake:{label:'임팩트 카메라 셰이크'}};
+const FX_DEF={polish:{label:'시네마 피니시 (조명·글로우)'},grain:{label:'필름 그레인'},vignette:{label:'비네팅'},letterbox:{label:'시네마 레터박스'},halftone:{label:'하프톤 도트'},scanlines:{label:'스캔라인'},chroma:{label:'RGB 분리 (색수차)'},lightleak:{label:'라이트 릭'},glitch:{label:'랜덤 글리치'},flicker:{label:'조명 깜빡임'},shake:{label:'임팩트 카메라 셰이크'}};
 const clone=o=>JSON.parse(JSON.stringify(o));
-function fromTemplate(t){return{v:1,template:t.id,name:t.name,aspect:t.aspect||'16:9',palette:[...t.palette],font:t.font,body:t.body,fx:{...t.fx},music:{preset:t.music,bpm:t.bpm,vol:.7},sfxVol:.9,scenes:clone(t.scenes)}}
+function fromTemplate(t){return{v:1,template:t.id,name:t.name,aspect:t.aspect||'16:9',palette:[...t.palette],font:t.font,body:t.body,fx:{polish:.6,...t.fx},music:{preset:t.music,bpm:t.bpm,vol:.7},sfxVol:.9,scenes:clone(t.scenes)}}
 const state={p:null,t:0,sel:0,tab:'tpl',undo:null};
 try{const saved=JSON.parse(localStorage.getItem('mls-project')||'null');if(saved&&saved.v===1&&Array.isArray(saved.scenes)&&saved.scenes.length)state.p=saved}catch(e){}
-if(!state.p)state.p=fromTemplate(TEMPLATES[0]);
+if(!state.p)state.p=fromTemplate(TEMPLATES[0]);if(state.p.fx&&state.p.fx.polish==null)state.p.fx.polish=.6;
 const DIMS={'16:9':[1280,720],'9:16':[720,1280],'1:1':[1080,1080]};
 
 /* ============================================================
@@ -1490,7 +1497,7 @@ function makePool(W,H){const mk=()=>{const c=document.createElement('canvas');c.
 const POOLS={};
 function poolFor(W,H){const k=W+'x'+H;return POOLS[k]||(POOLS[k]=makePool(W,H))}
 function envFor(p,W,H){return{W,H,u:Math.min(W,H)/720,P:p.palette,font:(FONTS[p.font]||FONTS.bhs).css,body:(FONTS[p.body]||FONTS.plex).css,titleShadow:true}}
-function drawScene(c,it,lt,e){c.save();c.setTransform(1,0,0,1,0,0);c.globalAlpha=1;c.globalCompositeOperation='source-over';c.filter='none';const k=SC[it.s.kind]||SC.title;e.vis=it.s.dur+it.td;e.dur=it.s.dur;try{k.draw(c,it.s,lt,e)}catch(err){c.fillStyle='#300';c.fillRect(0,0,e.W,e.H);console.error(err)}c.restore()}
+function drawScene(c,it,lt,e){c.save();c.setTransform(1,0,0,1,0,0);c.globalAlpha=1;c.globalCompositeOperation='source-over';c.filter='none';const k=SC[it.s.kind]||SC.title;e.vis=it.s.dur+it.td;e.dur=it.s.dur;PRO.ts=clamp(+it.s.ts||1,.5,1.8);PRO.cur=it.s;PRO.curI=it.i;try{k.draw(c,it.s,lt,e);c.restore();c.save();c.setTransform(1,0,0,1,0,0);c.globalAlpha=1;c.globalCompositeOperation='source-over';c.filter='none';PRO.ts=1;PRO.layers(c,it.s,lt,e)}catch(err){c.fillStyle='#300';c.fillRect(0,0,e.W,e.H);console.error(err)}PRO.ts=1;PRO.cur=null;c.restore()}
 function renderFrame(c,p,t,W,H,tl,cues,opts={}){
   const pool=poolFor(W,H);const e=envFor(p,W,H);tl=tl||timeline(p);
   const items=tl.items;if(!items.length){c.fillStyle='#000';c.fillRect(0,0,W,H);return}
@@ -1504,6 +1511,7 @@ function renderFrame(c,p,t,W,H,tl,cues,opts={}){
   if(nx&&t>=nx.lstart){const a=pool.A.getContext('2d'),b=pool.B.getContext('2d');drawScene(a,items[j],t-items[j].lstart,e);drawScene(b,nx,t-nx.lstart,e);const pp=clamp((t-nx.lstart)/Math.max(.001,nx.td));const fn=TRD[items[j].s.tr.type]||TRD.fade;c.save();fn(c,pool.A,pool.B,pp,e);c.restore()}
   else drawScene(c,items[j],t-items[j].lstart,e);
   c.restore();
+  PRO.finish(c,p.fx,e,t,pool);
   applyFx(c,p.fx,e,t,pool);
 }
 function applyFx(c,fx,e,t,pool){const{W,H,u}=e;const f=Math.floor(t*24);c.save();c.setTransform(1,0,0,1,0,0);
@@ -1691,17 +1699,17 @@ let DL=null;
 try{window.claude?.use?.('downloads').then(d=>{DL=d}).catch(()=>{})}catch(e){}
 async function saveFile(name,data){if(DL){try{await DL.save({filename:name,data});toast('저장했어요');return true}catch(err){if(err&&err.code==='declined'){toast('저장을 취소했어요');return false}if(err&&err.code==='rate_limited'){toast('저장 창이 이미 열려 있어요');return false}}}
   try{const blob=data instanceof Blob?data:new Blob([data]);const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),4000);return true}catch(e){toast('이 화면에서는 파일 저장을 할 수 없어요');return false}}
-$('#btn-save').addEventListener('click',()=>saveFile(`motionlab-${state.p.template||'project'}.json`,JSON.stringify(state.p,null,2)));
+$('#btn-save').addEventListener('click',()=>saveFile(`motionlab-${state.p.template||'project'}.json`,JSON.stringify({...state.p,media:PRO.exportMedia(state.p)},null,2)));
 $('#btn-import').addEventListener('click',()=>$('#file-import').click());
-$('#file-import').addEventListener('change',async ev=>{const f=ev.target.files[0];if(!f)return;try{const p=JSON.parse(await f.text());if(!p||!Array.isArray(p.scenes)||!p.scenes.length||!p.palette)throw 0;p.scenes.forEach(s=>{if(!SC[s.kind])s.kind='title';s.tr=s.tr||{type:'fade',dur:.5,sfx:'none'}});p.fx={...TEMPLATES[0].fx,...p.fx};p.v=1;state.undo=clone(state.p);stop();state.p=p;state.sel=0;state.t=0;changed(true);renderPane();toast(`‘${f.name}’을 불러왔어요`,'되돌리기',()=>{state.p=state.undo;changed(true);renderPane()})}catch(e){toast('프로젝트 파일 형식이 아니에요. 이 스튜디오에서 저장한 .json을 골라 주세요.')}ev.target.value=''});
+$('#file-import').addEventListener('change',async ev=>{const f=ev.target.files[0];if(!f)return;try{const p=JSON.parse(await f.text());if(!p||!Array.isArray(p.scenes)||!p.scenes.length||!p.palette)throw 0;PRO.importMedia(p.media);delete p.media;p.scenes.forEach(s=>{if(!SC[s.kind])s.kind='title';s.tr=s.tr||{type:'fade',dur:.5,sfx:'none'}});p.fx={polish:.6,...TEMPLATES[0].fx,...p.fx};p.v=1;state.undo=clone(state.p);stop();state.p=p;state.sel=0;state.t=0;changed(true);renderPane();toast(`‘${f.name}’을 불러왔어요`,'되돌리기',()=>{state.p=state.undo;changed(true);renderPane()})}catch(e){toast('프로젝트 파일 형식이 아니에요. 이 스튜디오에서 저장한 .json을 골라 주세요.')}ev.target.value=''});
 
 async function exportVideo(){if(!window.MediaRecorder||!cv.captureStream){toast('이 브라우저는 영상 녹화를 지원하지 않아요. 최신 Chrome에서 열어 주세요.');return}
   audio();try{await AC.resume()}catch(e){}stop();state.t=0;draw();
   const tracks=[...cv.captureStream(30).getVideoTracks()];if(RECDEST)tracks.push(...RECDEST.stream.getAudioTracks());const stream=new MediaStream(tracks);
-  const mime=['video/webm;codecs=vp9,opus','video/webm;codecs=vp8,opus','video/webm'].find(m=>MediaRecorder.isTypeSupported(m))||'';
+  const mime=[...(PRO.wantMp4()?['video/mp4;codecs=avc1.42E01E,mp4a.40.2','video/mp4']:[]),'video/webm;codecs=vp9,opus','video/webm;codecs=vp8,opus','video/webm'].find(m=>MediaRecorder.isTypeSupported(m))||'';
   let rec;try{rec=new MediaRecorder(stream,mime?{mimeType:mime,videoBitsPerSecond:8e6}:{})}catch(e){toast('녹화를 시작할 수 없어요.');return}
   const chunks=[];rec.ondataavailable=ev=>{if(ev.data.size)chunks.push(ev.data)};
-  rec.onstop=()=>{const blob=new Blob(chunks,{type:'video/webm'});showResult(blob)};
+  rec.onstop=()=>{PRO.ext=mime.startsWith('video/mp4')?'mp4':'webm';const blob=new Blob(chunks,{type:'video/'+PRO.ext});showResult(blob)};
   PB.rec=rec;PB.recording=true;
   $('#modal-root').innerHTML=`<div class="modal"><div class="card"><h2>영상 내보내는 중…</h2><p class="hint">실시간으로 녹화합니다 (${TL.total.toFixed(1)}초). 이 탭을 닫거나 다른 탭으로 옮기지 마세요.</p><div class="bar"><i id="rec-bar"></i></div><button class="btn sm" type="button" id="rec-cancel">취소</button></div></div>`;
   $('#rec-cancel').addEventListener('click',()=>{PB.cancel=true;finishRecording()});
@@ -1709,8 +1717,8 @@ async function exportVideo(){if(!window.MediaRecorder||!cv.captureStream){toast(
   rec.start(250);PB.cancel=false;await play()}
 function finishRecording(){if(!PB.recording)return;PB.recording=false;stop();setTimeout(()=>{try{PB.rec.stop()}catch(e){}if(PB.cancel){$('#modal-root').innerHTML='';PB.cancel=false;PB.rec.onstop=null}},300)}
 function showResult(blob){const url=URL.createObjectURL(blob);const mb=(blob.size/1048576).toFixed(1);
-  $('#modal-root').innerHTML=`<div class="modal"><div class="card"><h2>내보내기 완료</h2><p class="hint">WebM · ${state.p.aspect} · ${TL.total.toFixed(1)}초 · ${mb}MB</p><video src="${url}" controls playsinline></video><div class="tools"><button class="btn primary" type="button" id="res-save">WebM 파일 저장</button><button class="btn" type="button" id="res-close">닫기</button></div><p class="hint" style="margin-top:8px">MP4가 필요하면 저장한 WebM을 HandBrake·프리미어·캡컷 등에서 변환하세요.</p></div></div>`;
-  $('#res-save').addEventListener('click',()=>saveFile(`motionlab-${state.p.template||'video'}-${state.p.aspect.replace(':','x')}.webm`,blob));
+  $('#modal-root').innerHTML=`<div class="modal"><div class="card"><h2>내보내기 완료</h2><p class="hint">${PRO.ext.toUpperCase()} · ${state.p.aspect} · ${TL.total.toFixed(1)}초 · ${mb}MB</p><video src="${url}" controls playsinline></video><div class="tools"><button class="btn primary" type="button" id="res-save">${PRO.ext.toUpperCase()} 파일 저장</button><button class="btn" type="button" id="res-close">닫기</button></div>${PRO.ext==='mp4'?'':'<p class="hint" style="margin-top:8px">이 브라우저는 MP4 녹화를 지원하지 않아 WebM으로 저장했어요. MP4가 필요하면 HandBrake·프리미어·캡컷 등에서 변환하세요.</p>'}</div></div>`;
+  $('#res-save').addEventListener('click',()=>saveFile(`motionlab-${state.p.template||'video'}-${state.p.aspect.replace(':','x')}.${PRO.ext}`,blob));
   $('#res-close').addEventListener('click',()=>{$('#modal-root').innerHTML='';URL.revokeObjectURL(url)})}
 $('#btn-export').addEventListener('click',exportVideo);
 
@@ -1721,10 +1729,10 @@ const CUT={type:'cut',dur:.05,sfx:'none'};
 const HEX=/^#[0-9a-fA-F]{6}$/;
 function normScene(s){s=s||{};const kind=SC[s.kind]?s.kind:'title';const k=SC[kind];const opt=k.opts?(k.opts[s.opt]?s.opt:Object.keys(k.opts)[0]):null;const tr=s.tr||{};
   return{kind,text:String(s.text??'').slice(0,300),sub:String(s.sub??'').slice(0,300),dur:clamp(+s.dur||3,.5,20),entrance:ENTR[s.entrance]?s.entrance:'fade',opt,
-    tr:{type:TR[tr.type]?tr.type:'fade',dur:clamp(+tr.dur||.5,.05,2),sfx:(SFX[tr.sfx]||String(tr.sfx||'').startsWith('user:'))?tr.sfx:'none'},enterSfx:SFX[s.enterSfx]?s.enterSfx:'none',...(s.autoSfx===false?{autoSfx:false}:{})}}
+    tr:{type:TR[tr.type]?tr.type:'fade',dur:clamp(+tr.dur||.5,.05,2),sfx:(SFX[tr.sfx]||String(tr.sfx||'').startsWith('user:'))?tr.sfx:'none'},enterSfx:SFX[s.enterSfx]?s.enterSfx:'none',...(s.autoSfx===false?{autoSfx:false}:{}),...(Array.isArray(s.imgs)?{imgs:s.imgs.slice(0,4).map(x=>x?String(x):null)}:{}),...(+s.ts&&+s.ts!==1?{ts:clamp(+s.ts,.5,1.8)}:{}),...PRO.keep(s)}}
 function normPalette(p){return Array.isArray(p)&&p.length===5&&p.every(c=>HEX.test(c))?[...p]:null}
 function normProject(p){if(!p||!Array.isArray(p.scenes)||!p.scenes.length)return null;return{v:1,template:String(p.template||'custom'),name:String(p.name||'내 템플릿').slice(0,80),aspect:DIMS[p.aspect]?p.aspect:'16:9',palette:normPalette(p.palette)||[...TEMPLATES[0].palette],
-  font:FONTS[p.font]?p.font:'bhs',body:FONTS[p.body]?p.body:'plex',fx:Object.fromEntries(Object.keys(FX_DEF).map(k=>[k,clamp(+(p.fx||{})[k]||0)])),
+  font:FONTS[p.font]?p.font:'bhs',body:FONTS[p.body]?p.body:'plex',fx:Object.fromEntries(Object.keys(FX_DEF).map(k=>[k,clamp(+((p.fx||{})[k]??(k==='polish'?.6:0))||0)])),
   music:{preset:MUSIC[p.music?.preset]&&p.music.preset!=='upload'?p.music.preset:'none',bpm:clamp(+p.music?.bpm||120,60,170),vol:clamp(+p.music?.vol||.7)},sfxVol:clamp(+p.sfxVol||.9,0,1.5),scenes:p.scenes.slice(0,60).map(normScene)}}
 function lookOf(src){const p=state.p;return{palette:src?.palette||p.palette,font:src?.font||p.font,body:src?.body||p.body,fx:src?.fx||null}}
 const sceneStill=s=>Math.max(.3,Math.min(s.dur*.72,s.dur-.15));
@@ -1744,7 +1752,7 @@ function hovLoop(){if(!HOV)return;if(!HOV.cn.isConnected){HOV=null;return}try{HO
 
 /* sample text for each illustration kind */
 const SAMPLE={title:['타이틀','부제목'],chat:['오늘 뭐 해?\n영화 볼래?\n좋아!',''],portrait:['주인공','역할'],object:['',''],theater:['',''],kineticStack:['MOTION',''],kineticSlam:['HEY YOU',''],splitGrid:['분할 · 패널',''],journey:['어디든 간다',''],noir:['배 우 명','주연'],ribbon:['붉은 인연',''],brush:['홍연','부제'],grid:['GRID\nSYSTEM','MODULE 01'],hashtags:['#해시 #태그 #팝업','카피'],endcard:['엔드카드','www.example.kr'],neon:['NEON','OPEN'],polaroid:['바다\n노을\n우리','DAY 1'],countdown:['GO!',''],lowerThird:['홍 길 동','직함'],dataBars:['데이터','30 60 90'],liquid:['FLOW',''],retroSun:['RETRO',''],paper:['옛날 옛적에',''],comic:['POW!',''],map:['서울 도쿄 파리','여행 경로'],news:['속보 헤드라인','티커 텍스트 · 주요 뉴스'],game:['LEVEL UP!','PRESS START'],food:['요리 이름','재료'],house:['우리 집','84㎡'],calendar:['D-DAY',''],quote:['좋은 문장은\n오래 남는다','— 출처'],product:['NEW','₩9,900'],confetti:['축하해요!',''],season:['봄','시즌'],lineChart:['그래프','20 35 30 50 70 90']};
-function sampleScene(kind,opt){const[t,s]=SAMPLE[kind]||['텍스트',''];return normScene({kind,opt,text:t,sub:s,dur:3,entrance:'pop'})}
+function sampleScene(kind,opt){const[t,s]=SAMPLE[kind]||PRO.sample[kind]||['텍스트',''];return normScene({kind,opt,text:t,sub:s,dur:3,entrance:'pop'})}
 
 /* ============================================================
    20. asset store (team library via db, else this browser)
@@ -1953,9 +1961,11 @@ try{const t=localStorage.getItem('mls-tab');if(t)state.tab=t}catch(e){}
 document.querySelectorAll('.tabs button').forEach(b=>b.setAttribute('aria-selected',String(b.dataset.tab===state.tab)));
 state.t=Math.min(3.2,TL.total/2);
 renderTimeline();renderPane();draw();
-const fontsToLoad=["Anton","Black Han Sans","Do Hyeon","Gowun Batang","IBM Plex Sans KR","JetBrains Mono","Jua","Nanum Brush Script","Nanum Myeongjo","Press Start 2P","Gaegu"];
+const fontsToLoad=["Anton","Black Han Sans","Do Hyeon","Gowun Batang","IBM Plex Sans KR","JetBrains Mono","Jua","Nanum Brush Script","Nanum Myeongjo","Press Start 2P","Gaegu","Noto Sans KR","Gothic A1","Montserrat","Playfair Display","Bebas Neue"];
 Promise.all(fontsToLoad.map(f=>document.fonts.load(`40px "${f}"`,'가A1').catch(()=>{}))).then(()=>{draw();if(state.tab==='tpl')drawThumbs()});
 </script>
+<script src="pro-ui.js"></script>
+<script src="pro-canvas.js"></script>
 <script src="../assets/ads-config.js"></script>
 <script src="../assets/site.js"></script>
 </body>

@@ -336,6 +336,7 @@ html,body{height:auto}
 <li><b>에셋 끌어다 놓기</b> — ‘에셋’ 탭의 장면·전환·효과음 카드를 타임라인으로 끌어다 놓으면 바로 들어갑니다. 카드에 마우스를 올리면 움직임을 미리 볼 수 있어요.</li>
 <li><b>색·서체·효과</b> — ‘효과·색’ 탭에서 팔레트, 서체, 화면 비율(16:9·9:16·1:1), 필름 그레인·레터박스 등을 조절합니다.</li>
 <li><b>화면에서 바로 편집</b> — 미리보기 화면의 글자나 사진을 클릭하면 그 항목의 편집 창이 열리고, 끌면 위치가, 모서리 점을 끌면 크기가 바뀝니다. ‘추가 요소’로 텍스트나 로고를 원하는 곳에 더 올릴 수 있습니다.</li>
+<li><b>도구 막대</b> — 미리보기 아래 막대에서 선택한 글자·그림의 색, 크기, 회전, 투명도를 바꾸고 도형·아이콘·텍스트·이미지를 추가합니다. 빈 곳을 끌면 장면의 내용 전체가 움직이고, 장면만의 색과 확대도 여기서 조절합니다.</li>
 <li><b>사진·로고 넣기</b> — ‘사진 히어로’, ‘로고 리빌’, ‘스마트폰 목업’ 같은 장면은 ‘장면·기법’ 탭에서 내 이미지를 넣을 수 있습니다. 미리보기 화면에 파일을 끌어다 놓아도 됩니다.</li>
 <li><b>되돌리기·단축키</b> — Ctrl+Z / Ctrl+Shift+Z로 되돌리기·다시 실행, Ctrl+D 장면 복제, Del 삭제, PgUp·PgDn 장면 이동.</li>
 <li><b>내보내기</b> — ‘영상 내보내기’를 누르면 영상 길이만큼 실시간 녹화한 뒤 WebM 파일로 저장합니다.</li>
@@ -1497,7 +1498,7 @@ function makePool(W,H){const mk=()=>{const c=document.createElement('canvas');c.
 const POOLS={};
 function poolFor(W,H){const k=W+'x'+H;return POOLS[k]||(POOLS[k]=makePool(W,H))}
 function envFor(p,W,H){return{W,H,u:Math.min(W,H)/720,P:p.palette,font:(FONTS[p.font]||FONTS.bhs).css,body:(FONTS[p.body]||FONTS.plex).css,titleShadow:true}}
-function drawScene(c,it,lt,e){c.save();c.setTransform(1,0,0,1,0,0);c.globalAlpha=1;c.globalCompositeOperation='source-over';c.filter='none';const k=SC[it.s.kind]||SC.title;e.vis=it.s.dur+it.td;e.dur=it.s.dur;PRO.ts=clamp(+it.s.ts||1,.5,1.8);PRO.cur=it.s;PRO.curI=it.i;try{k.draw(c,it.s,lt,e);c.restore();c.save();c.setTransform(1,0,0,1,0,0);c.globalAlpha=1;c.globalCompositeOperation='source-over';c.filter='none';PRO.ts=1;PRO.layers(c,it.s,lt,e)}catch(err){c.fillStyle='#300';c.fillRect(0,0,e.W,e.H);console.error(err)}PRO.ts=1;PRO.cur=null;c.restore()}
+function drawScene(c,it,lt,e){c.save();c.setTransform(1,0,0,1,0,0);c.globalAlpha=1;c.globalCompositeOperation='source-over';c.filter='none';const k=SC[it.s.kind]||SC.title;e.vis=it.s.dur+it.td;e.dur=it.s.dur;PRO.ts=clamp(+it.s.ts||1,.5,1.8);PRO.cur=it.s;PRO.curI=it.i;const P0=e.P;if(it.s.pal)e.P=it.s.pal;try{PRO.cam(c,it.s);k.draw(c,it.s,lt,e);PRO.camEnd(c);c.restore();c.save();c.setTransform(1,0,0,1,0,0);c.globalAlpha=1;c.globalCompositeOperation='source-over';c.filter='none';PRO.ts=1;PRO.layers(c,it.s,lt,e)}catch(err){c.fillStyle='#300';c.fillRect(0,0,e.W,e.H);console.error(err)}PRO.camEnd(c);e.P=P0;PRO.ts=1;PRO.cur=null;c.restore()}
 function renderFrame(c,p,t,W,H,tl,cues,opts={}){
   const pool=poolFor(W,H);const e=envFor(p,W,H);tl=tl||timeline(p);
   const items=tl.items;if(!items.length){c.fillStyle='#000';c.fillRect(0,0,W,H);return}

@@ -34,7 +34,7 @@
   const C={sel:null,hov:null,drag:null,guides:false,gx:false,gy:false};
   PRO.csel=()=>C.sel;
   const NAMES={text:'메인 텍스트',sub:'보조 텍스트',g:'그래픽'};
-  const nameOf=k=>NAMES[k]||(k[0]==='L'?'추가 요소':(SC[scene().kind].mediaLabel||[])[+k.slice(3)]||'사진');
+  const nameOf=k=>NAMES[k]||(k[0]==='g'?'그래픽 '+(+k.slice(1)+1):k[0]==='L'?'추가 요소':(SC[scene().kind].mediaLabel||[])[+k.slice(3)]||'사진');
   const sceneIdx=()=>{let j=TL.items.findIndex(it=>state.t>=it.start&&state.t<it.end);return j<0?TL.items.length-1:j};
   const scene=()=>state.p.scenes[PRO.sel>=0&&PRO.sel<state.p.scenes.length?PRO.sel:state.sel];
 
@@ -167,7 +167,7 @@
       <label>투명도 <input type="range" data-lop min="0.05" max="1" step="0.05" value="${l.op==null?1:l.op}"></label><label>회전 <input type="range" data-lrot min="-180" max="180" step="1" value="${l.rot||0}"></label>
       ${l.t==='shape'?`<label>비율 <input type="range" data-lar min="0.02" max="3" step="0.02" value="${l.ar||1}"></label>`:''}<span class="sep"></span>${B('front','앞으로')}${B('back','뒤로')}${B('dup','복제')}${B('del','삭제')}`}
     else if(key.slice(0,3)==='img'){const v=(s.imgPos&&s.imgPos[+key.slice(3)])||[.5,.5,1];h=`<b>${esc(nameOf(key))}</b><label>확대 <input type="range" data-izoom min="1" max="3" step="0.02" value="${v[2]||1}"></label>${B('reset','원위치')}${B('edit','사진 바꾸기')}<span style="color:var(--muted)">사진을 끌면 보이는 부분이 바뀌어요</span>`}
-    else{h=`<b>${esc(nameOf(key))}</b>${key==='g'?'':`<label>색 <input type="color" data-tcol value="${hex((s.col&&s.col[key])||P[3])}"></label>${s.col&&s.col[key]?B('colreset','↺','원래 색으로'):''}`}${B('smaller','작게')}${B('bigger','크게')}${B('center','가운데로')}${B('reset','원위치')}${key==='g'?'':B('edit','내용 편집')}`}
+    else{h=`<b>${esc(nameOf(key))}</b>${key[0]==='g'?'':`<label>색 <input type="color" data-tcol value="${hex((s.col&&s.col[key])||P[3])}"></label>${s.col&&s.col[key]?B('colreset','↺','원래 색으로'):''}`}${B('smaller','작게')}${B('bigger','크게')}${B('center','가운데로')}${B('reset','원위치')}${key[0]==='g'?'':B('edit','내용 편집')}`}
     tb.innerHTML=h}
   const reb=()=>{sig='';bar()};
   tb.addEventListener('input',ev=>{const t=ev.target,s=scene(),key=C.sel;
